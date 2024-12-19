@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "builddb"
+    bucket         = "flappybird-terraform-state"
     region         = "us-east-1"
     key            = "End-to-End-Kubernetes-DevSecOps-Tetris-Project/EKS-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
